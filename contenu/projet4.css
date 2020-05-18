@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'gandhi_serifregular';
+    src: url('font/GandhiSerif-Regular-webfont.eot');
+    src: url('font/GandhiSerif-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/GandhiSerif-Regular-webfont.woff2') format('woff2'),
+         url('font/GandhiSerif-Regular-webfont.woff') format('woff'),
+         url('font/GandhiSerif-Regular-webfont.ttf') format('truetype'),
+         url('font/GandhiSerif-Regular-webfont.svg#gandhi_serifregular') format('svg');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#conteneur {
+    width: 100%;
+    height: 100%;
+    font-family: gandhi_serifregular;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+header p {
+    font-style: italic;
+    color: grey;
+    margin-left: 150px;
+    
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: grey;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+nav ul {
+    width: 700px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+nav li {
+    margin: 0;
+    cursor: pointer;
+}
+
+#chapitres {
+    position: absolute;
+    left: 630px;
+    top: 124px;
+    z-index: 2;
+}
+
+#chapitres li {
+    border: 1px solid black;
+    padding: 15px;
+    background-color: lightgrey; 
+}
+
+#connexion {
+    position: absolute;
+    left: 950px;
+    z-index: 2;
+    background-color: lightgrey;
+}
+
+#connexion label, #connexion input {
+    margin: 5px;
+}
+
+#chapitres, #connexion {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.1s;
+    transition: height 0.1s;
+}
+
+#chapitres:target {
+    height: 500px;
+}
+
+#connexion:target {
+    height: 140px;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    color: darkgreen;
+}
+
+.errInfo {
+    text-align: center;
+    color: darkred;
+}
+
+#contenuAccueil {
+    background: rgb(238, 238, 238);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 30px 0 50px 0;
+}
+
+#presentation {
+    padding: 30px;
+}
+
+#presentation h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+section img {
+    width: 1000px;
+}
+
+#textePresentation {
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2em;
+    padding: 25px;
+}
+
+#contenuAccueil aside {
+    margin-top: 35px;
+}
+
+#derniersChap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#derniersChap div {
+    width: 300px;
+}
+
+#derniersChap h3 {
+    text-align: center;
+}
+
+#derniersChap a {
+    text-decoration: underline;
+}
+
+aside {
+    width: 280px;
+    text-align: center;
+    padding: 30px;
+}
+aside img {
+    width: 180px;
+    padding-left: 20px;
+}
+
+#comRec {
+    margin: 100px 0 40px 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+#com1 {
+    background: url('img/alaska.jpg') fixed no-repeat center;
+    background-size: cover;
+}
+
+#com2 {
+    background: url('img/pexels-photo-206776.jpeg') fixed no-repeat center;
+}
+
+#com3 {
+    background: url('img/pexels-photo-207049.jpeg') fixed no-repeat;
+    background-size: cover;
+}
+
+#com4 {
+    background: url('img/Polarlicht_2.jpg') fixed no-repeat center;
+    background-size: cover;
+}
+
+#com5 {
+    background: url('img/pexels-photo-314839.jpeg') fixed no-repeat;
+}
+
+.sectionCom {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    margin: 0 150px;
+    min-height: 465px;
+}
+
+.sectionCom h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#apercu {
+    background: url('img/pexels-photo-207049.jpeg') fixed no-repeat;
+    background-size: cover;
+}
+
+#postCom {
+    margin-top: 50px;
+}
+
+#ajoutCom {
+    padding-top: 50px;
+}
+
+#formulaireCom {
+    width: 250px;
+    margin: auto;
+}
+
+#formulaireCom input {
+    margin: 10px;
+    width: 250px;
+}
+
+#comm {
+    margin-top: 10px;
+}
+
+#admin, #adminChap, .adminUpdate {
+    background: url('img/AlaskaMap1895.jpg') fixed no-repeat center;
+    background-size: cover;
+}
+
+#admin h2 {
+    text-align: center;
+}
+
+.administration {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    margin: 0 150px;
+}
+
+.administration input {
+    width: 400px;
+}
+
+#bouton {
+    margin-left: 25px;
+}
+
+.bouton {
+    margin: 20px;
+    max-width: 100px;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px 0;
+    background-color: black;
+    color: white;
+}
+
+@media all and (max-width: 1350px) {
+    #chapitres {
+        left: 430px;
+    }
+    #connexion {
+        left: 680px;
+    }
+    #contenuAccueil {
+        display: block;
+        margin: auto;
+    }
+    #presentation img {
+        width: 900px;
+        padding: 0 120px;
+    }
+    aside {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        width: auto;
+    }
+    #asidePres, #asideCom {
+        width: 30%;
+        padding: 0 50px;
+    }
+    #asideCom h2 {
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    #presentation img {
+        width: 800px;
+        padding: 0 80px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #chapitres {
+        left: 300px;
+    }
+    #connexion {
+        left: 480px;
+    }
+    #derniersChap {
+        display: inherit;
+    }
+    #derniersChap div {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    #presentation img {
+        display: none;
+    }
+    #textePresentation {
+        position: inherit;
+        width: auto;
+        height: auto;
+    }
+    aside {
+        display: inherit;
+        padding: 0 60px;
+    }
+    aside p {
+        text-align: center;
+    }
+    #asidePres, #asideCom {
+        width: auto;
+        padding: 0;
+    }
+    #asideCom h2 {
+        margin-top: 50px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    header {
+        height: 120px;
+    }
+    nav {
+        height: auto;
+    }
+    nav ul {
+        width: 200px;
+        display: block;
+        text-align: center;
+    }
+    #chapitres {
+        top: 254px;
+        left: 140px;
+    }
+    #connexion {
+        left: 180px;
+    }
+    .sectionCom, .administration {
+        padding: 20px;
+        margin: 0 80px;
+    }
+    #comm {
+        max-width: 100%;
+        height: 200px;
+    }
+    .administration input {
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header {
+        height: 150px;
+    }
+    header p {
+        margin-left: 20px;
+    }
+    #chapitres {
+        top: 283px;
+        left: 0px;
+    }
+    #connexion {
+        left: 30px;
+    }
+    .sectionCom, .administration {
+        margin: 0;
+    }
+        .administration input {
+        width: 250px;
+    }
+}
